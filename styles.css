@@ -1,0 +1,130 @@
+* {
+    background-color: rgb(30, 49, 49);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+textarea{
+    color: whitesmoke;
+}
+
+header img{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    margin: 10px;
+}
+
+main{
+    display: flex;
+    margin-left: 80px;
+}
+
+.uno{
+    position: relative;
+    top: 50px;
+}
+
+.input-texto{
+    padding: 15px;
+    border: solid 2px black;
+}
+
+.informacion{
+    font-size: 14px;
+    color: white;
+    font-weight: lighter;
+    margin: 5px 0 50px 5px;
+}
+
+.botones button{
+    margin: 0 15px 15px 15px;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 20px 45px;
+}
+
+.encriptar{
+    background-color: rgb(57, 57, 214);
+}
+
+.desencriptar{
+    background-color: rgb(204, 204, 171);
+}
+
+.encriptar:hover{
+    transform: scale(1.1);
+}
+
+.desencriptar:hover{
+    transform: scale(1.1);
+}
+
+/*-------------------------------------------------------------------*/
+
+.mensaje-box{
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+
+.mensaje{
+    background-image: url(./imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    border: solid 2px black;
+    margin: 50px;
+}
+
+.mensaje-box textarea{
+    width: 320px;
+    height: 400px;
+}
+
+.mensaje-box button{
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 20px 45px;
+
+}
+
+.copiar{
+    background-color: rgb(204, 204, 171);
+}
+
+.copiar:hover{
+    transform: scale(1.1);
+}
+
+/*-------------------------------------------------------------------*/
+
+@media screen And (max-width:500px) {
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        align-self: auto;
+    }
+
+    section{
+        margin: 5px auto;
+    }
+
+    .uno textarea{
+        width: 300px;
+    }
+
+    .botones{
+        display: flex;
+    }
+
+    .mensaje-box{
+        position: initial;
+
+        margin-left: 0;
+    }
+
+    .mensaje{
+        margin-left: 0;
+    }
+}
